@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>API_KEY</key>
+	<string>AIzaSyBcXQBMrJb_7tVwERO7DQHYg4u3TKcdBCU</string>
+	<key>GCM_SENDER_ID</key>
+	<string>307993301190</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.inventoryManagement</string>
+	<key>PROJECT_ID</key>
+	<string>inventory-management-app-100fc</string>
+	<key>STORAGE_BUCKET</key>
+	<string>inventory-management-app-100fc.firebasestorage.app</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:307993301190:ios:1f17eb01e1fd8091ee87c7</string>
+</dict>
+</plist>
