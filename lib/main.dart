@@ -1,48 +1,55 @@
+// Import Flutter package
 import 'package:flutter/material.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(InventoryApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
+class InventoryApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Inventory Management App',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: InventoryHomePage(title: 'Inventory Home Page'),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-
-  final String title;
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
+class InventoryHomePage extends StatefulWidget {
+InventoryHomePage({Key key, this.title}) : super(key: key);
+final String title;
+@override
+_InventoryHomePageState createState() => _InventoryHomePageState();
 }
-
-class _MyHomePageState extends State<MyHomePage> {
+class _InventoryHomePageState extends State<InventoryHomePage> {
+  // TODO: Implement Firestore integration
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            
+            Text(
+              'Inventory Management System',
+            ),
+            // TODO: Implement inventory list view
           ],
         ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          // TODO: Implement add inventory item
+        },
+        tooltip: 'Add Item',
+        child: Icon(Icons.add),
       ),
     );
   }
